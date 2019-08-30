@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_introduction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/index_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        style="@style/ToolBarStyle"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/string_validation_new_phone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_middle_text_size" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_margin_left"
+        android:background="@color/gray_white"
+        />
+
+    <TextView
+        android:layout_marginLeft="@dimen/app_margin_small"
+        android:padding="@dimen/app_margin_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_input_new_phone"
+        android:textSize="@dimen/small_middle_text_size"
+        android:textColor="@color/design_text_black"
+        />
+
+    <EditText
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/design_text_black"
+        android:hint="@string/string_phone_title"
+        android:textColorHint="@color/design_text_gray"
+        android:layout_marginLeft="@dimen/app_margin_small"
+        android:layout_marginRight="@dimen/app_margin_small"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|center_vertical"
+        android:id="@+id/et_phone"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <FrameLayout
+        android:layout_marginLeft="@dimen/app_margin_small"
+        android:layout_marginRight="@dimen/app_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="验证码"
+            android:textColorHint="@color/design_text_gray"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_text_black"
+            android:layout_gravity="center_vertical"
+            android:gravity="left|center_vertical"
+            android:id="@+id/et_smscode"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="@dimen/small_text_size"
+            android:id="@+id/tv_get_sms"
+            android:layout_marginBottom="@dimen/app_margin_small"
+            android:layout_marginRight="@dimen/app_margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/getSMS"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/primary"
+            />
+
+
+    </FrameLayout>
+
+    <Button
+
+        android:layout_below="@id/ll_head"
+        android:id="@+id/bt_finish"
+        android:layout_marginLeft="@dimen/app_margin_top"
+        android:layout_marginRight="@dimen/app_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_margin_top"
+        android:background="@drawable/bg_add"
+        android:text="@string/string_finish"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_middle_text_size" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/app_margin_left"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:layout_marginTop="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/tv_car_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/design_text_black"
+            android:textSize="@dimen/medium_large_text_size" />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_car_license"
+            android:layout_alignBottom="@+id/tv_car_license"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="已超时"
+            android:textColor="@color/design_main_blue"
+            android:textSize="@dimen/small_middle_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingTop="@dimen/app_margin_left"
+        android:paddingBottom="@dimen/app_margin_left"
+        android:layout_marginTop="@dimen/app_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/tv_park_name"
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/design_text_gray"
+        />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_park_during_time"
+            android:layout_marginRight="@dimen/app_margin_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_text_gray"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:paddingTop="@dimen/app_margin_left"
+        android:paddingBottom="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tv_in_time"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_text_gray"
+            />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_money"
+            android:layout_marginRight="@dimen/app_margin_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_text_gray"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:paddingTop="@dimen/app_margin_left"
+        android:paddingBottom="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tv_time_out"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_main_orange"
+            />
+
+        <LinearLayout
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <TextView
+            android:id="@+id/tv_timeout_title"
+            android:layout_marginRight="@dimen/app_margin_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="超时费用:"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_text_gray"
+            />
+
+        <TextView
+            android:layout_toRightOf="@id/tv_timeout_title"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_timeout_money"
+            android:layout_marginRight="@dimen/app_margin_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_main_orange"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white"
+        />
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:textSize="@dimen/small_middle_text_size"
+        android:textColor="@color/design_main_orange"
+        android:background="@drawable/round_gray_stroke_large_round"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:layout_marginBottom="@dimen/app_margin_small"
+        android:layout_marginTop="@dimen/app_margin_small"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/app_margin_top"
+        android:paddingRight="@dimen/app_margin_top"
+        android:text="@string/String_pay"
+
+        />
+
+
+</LinearLayout>

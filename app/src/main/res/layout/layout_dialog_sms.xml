@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/app_margin_bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_input_sms"
+            android:textSize="@dimen/small_middle_text_size"
+            android:textColor="@color/design_main_black"
+            android:padding="@dimen/app_margin_left"
+            android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_close_gray"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:layout_marginRight="@dimen/app_margin_right"
+            />
+
+
+    </RelativeLayout>
+
+
+    <pub.monkeyboss.widget.CodeInputView
+        android:layout_marginTop="@dimen/app_margin_top"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:blank_background="@drawable/rounded_white_gray_strok_bg"
+        app:full_background = "@drawable/rounded_blue_stroke"
+        android:layout_centerInParent="true"
+        android:id="@+id/code_input"
+        android:layout_marginBottom="16dp"
+        app:child_h_padding="10dp"
+        app:child_height="40dp"
+        app:child_width="40dp"
+        app:code_length="4"
+        app:cursorVisible="true"
+
+        />
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/app_margin_small"
+        android:padding="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_marginLeft="@dimen/app_margin_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="152345324324"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_text_gray"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_seconds"
+            android:layout_marginRight="@dimen/app_margin_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/getSMS"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_text_gray"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

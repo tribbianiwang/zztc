@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/app_margin_left"
+    android:paddingRight="@dimen/app_margin_left"
+    android:layout_marginTop="1dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:layout_margin="@dimen/app_margin_left"
+        android:layout_alignParentLeft="true"
+        android:layout_width="35dp"
+        android:layout_centerVertical="true"
+        android:layout_height="35dp"
+        android:src="@drawable/icon_twitter"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/white"
+        android:id="@+id/civ_head_icon"
+        />
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_marginTop="@dimen/app_margin_left"
+            android:maxLength="11"
+            android:id="@+id/tv_user_name"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="152****2537"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/gray_deep"
+            />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/app_margin_left"
+            android:id="@+id/tv_comment"
+            android:layout_marginRight="@dimen/app_margin_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/black"
+            />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="@dimen/app_margin_left"
+            android:background="@color/white"
+            android:id="@+id/rv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_marginTop="@dimen/app_margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="@dimen/app_margin_small"
+            android:text=""/>
+
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>

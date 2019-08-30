@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_guide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <TextView
+            android:layout_marginRight="@dimen/app_margin_top"
+            android:layout_marginTop="@dimen/app_margin_top"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tv_skip"
+            android:paddingTop="@dimen/margin_2dp"
+            android:paddingBottom="@dimen/margin_2dp"
+            android:paddingLeft="@dimen/app_margin_left"
+            android:paddingRight="@dimen/app_margin_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_skip"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_main_blue"
+            android:background="@drawable/rounded_blue_stroke_large_cornor"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_margin_left"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app_margin_left"
+                android:background="@drawable/bg_experience"
+                android:text="@string/start_to_experience"
+                android:textColor="@color/defaultblue"
+                android:visibility="gone" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator_custom"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                app:ci_animator="@animator/indicator_animator"
+                app:ci_animator_reverse="@animator/indicator_animator_reverse"
+                app:ci_drawable="@drawable/black_radius_square"
+                app:ci_height="4dp"
+                app:ci_margin="6dp"
+                app:ci_width="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

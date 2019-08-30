@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="@dimen/app_margin_right"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_privacy_policy"
+        android:textSize="@dimen/medium_text_size"
+        android:textColor="@color/design_text_black"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_disgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_disagree"
+        android:textColor="@color/design_text_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/small_middle_text_size"
+        android:layout_marginBottom="@dimen/app_margin_bottom"
+        android:layout_marginLeft="@dimen/app_margin_right"
+        android:padding="@dimen/app_margin_small"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_agree"
+        android:textColor="@color/primary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/small_middle_text_size"
+        android:layout_marginBottom="@dimen/app_margin_bottom"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:padding="@dimen/app_margin_small"
+        />
+
+
+    <ScrollView
+        android:layout_below="@id/tv_title"
+        android:layout_above="@id/tv_disgree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/wv_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_introduction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/gray_white"
+    >
+
+        <LinearLayout
+            android:id="@+id/ll_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:weightSum="10"
+            android:gravity="center_vertical"
+
+            >
+
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/iv_back"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_back"
+                    android:background="?android:attr/selectableItemBackground"
+                    />
+
+
+
+        <include
+            android:layout_margin="@dimen/app_margin_small"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/cornor_search_layout"
+           ></include>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_history"
+            android:background="@color/white"
+            android:padding="@dimen/app_margin_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/app_margin_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history_search_title"
+                    android:textColor="@color/gray_deep"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+
+                    />
+
+
+                <ImageView
+                    android:id="@+id/iv_delete_history"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/app_margin_top"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_delete_gray"
+                    />
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+
+
+</LinearLayout>

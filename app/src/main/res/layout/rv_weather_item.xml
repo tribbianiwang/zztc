@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/app_margin_right"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8/01今日"
+        android:textSize="@dimen/small_middle_text_size"
+        android:textColor="@color/design_text_black"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/iv_weather"
+        android:layout_centerInParent="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_weather_temperature_min"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="33"
+        android:textColor="@color/design_text_gray"
+        android:textSize="@dimen/small_middle_text_size"
+        />
+    <TextView
+        android:layout_marginRight="@dimen/app_margin_top"
+        android:layout_toLeftOf="@id/tv_weather_temperature_min"
+        android:id="@+id/tv_weather_temperature_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="34"
+        android:textColor="@color/design_text_black"
+        android:textSize="@dimen/small_middle_text_size"
+        />
+
+
+</RelativeLayout>

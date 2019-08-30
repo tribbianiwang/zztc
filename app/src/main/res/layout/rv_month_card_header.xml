@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginLeft="@dimen/app_margin_left"
+    android:layout_marginRight="@dimen/app_margin_left"
+    >
+
+    <include
+        layout="@layout/search_layout_gray_bg"
+        />
+
+    <ImageView
+        android:layout_marginTop="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/icon_month_card_car"
+        android:scaleType="fitXY"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

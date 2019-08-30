@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray_white"
+    >
+
+
+
+    <RelativeLayout
+        android:clickable="true"
+        android:padding="@dimen/app_margin_left"
+        android:id="@+id/rl_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_white_gray"
+        >
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_centerVertical="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/takephoto"
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/small_middle_text_size"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:clickable="true"
+        android:layout_marginTop="1dp"
+        android:padding="@dimen/app_margin_left"
+        android:id="@+id/rl_pick_from_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_white_gray"
+        >
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_centerVertical="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_from_album"
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/small_middle_text_size"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:clickable="true"
+        android:gravity="center"
+        android:textSize="@dimen/small_middle_text_size"
+        android:layout_marginTop="@dimen/app_margin_top"
+        android:padding="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancle"
+        android:textColor="@color/gray_deep"
+        android:background="@drawable/selector_white_gray"
+        />
+
+
+
+</LinearLayout>

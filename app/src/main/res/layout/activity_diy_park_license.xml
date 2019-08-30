@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ipv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/thirdLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/gray_white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/index_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/default_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_middle_text_size" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+        android:layout_marginTop="@dimen/app_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_car_license_bg"
+        android:scaleType="fitCenter"
+        />
+
+
+
+    <com.yascn.smartpark.view.InputView
+        android:text="豫"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/input_view"
+        android:layout_margin="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:background="@color/gray_white"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        ipv:bg_color="@color/gray_white"
+        android:layout_height="60dp" />
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_marginLeft="@dimen/app_margin_right"
+        android:layout_gravity="left"
+        android:id="@+id/acb_newenergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择8位新能源车牌"
+        android:textColor="@color/design_main_blue"
+        android:textSize="@dimen/small_text_size"
+        />
+    <Button
+        android:id="@+id/addCar"
+        android:layout_marginLeft="@dimen/app_margin_large"
+        android:layout_marginRight="@dimen/app_margin_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_margin_small"
+        android:background="@drawable/bg_add"
+        android:text="@string/add_string"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_middle_text_size" />
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginBottom="@dimen/app_margin_bottom"
+        >
+        <android.inputmethodservice.KeyboardView
+            android:background="@color/gray_white"
+            android:id="@+id/keyboard_view"
+            android:keyPreviewLayout="@layout/key_preview_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:paddingTop="5dp"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@drawable/cornor_selector_white_gray"
+            android:keyTextColor="#5E5E5E"
+            android:shadowColor="#ffffff"
+            android:shadowRadius="0.0"
+            android:keyTextSize="18sp"
+            android:labelTextSize="18sp"
+       />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

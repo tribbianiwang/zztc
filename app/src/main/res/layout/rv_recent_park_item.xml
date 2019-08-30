@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_white_bg"
+   android:layout_marginLeft="@dimen/app_margin_left"
+    android:layout_marginRight="@dimen/app_margin_left"
+    android:layout_marginTop="@dimen/app_margin_small"
+    android:id="@+id/rl_recent_item_root"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_park_nums"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="@dimen/app_margin_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tv_free_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75"
+            android:textColor="@color/design_main_blue"
+            android:textSize="@dimen/largest_text_size"
+            />
+        <TextView
+
+            android:id="@+id/tv_free_num_Bottom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/free_park_num_without_newline"
+            android:textColor="@color/design_main_blue"
+            android:textSize="@dimen/small_text_size"
+            />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_no_free_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/is_full"
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/largest_text_size"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_toLeftOf="@+id/ll_park_nums"
+        android:padding="@dimen/app_margin_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/tv_park_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_main_blue"
+            android:text=""
+            android:textSize="@dimen/medium_large_text_size"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/app_margin_small"
+            android:layout_marginBottom="@dimen/app_margin_small"
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/small_text_size"
+            />
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingLeft="@dimen/margin_5dp"
+            android:paddingRight="@dimen/margin_5dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_blue_bg"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

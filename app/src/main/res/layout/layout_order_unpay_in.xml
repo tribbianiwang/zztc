@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/app_margin_left"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:layout_marginTop="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+
+            android:id="@+id/tv_car_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="豫A897F6"
+            android:textColor="@color/design_text_black"
+            android:textSize="@dimen/medium_large_text_size" />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_car_license"
+            android:layout_alignBottom="@+id/tv_car_license"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="未支付"
+            android:textColor="@color/design_main_blue"
+            android:textSize="@dimen/small_middle_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:layout_marginTop="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+
+        android:id="@+id/tv_park_name"
+        android:layout_marginTop="@dimen/app_margin_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绿地世纪峰会地下停车场"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/design_text_gray"
+        />
+
+    <TextView
+
+        android:layout_alignParentRight="true"
+        android:id="@+id/tv_park_during_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停车2小时50分"
+        android:textColor="@color/design_text_gray"
+        android:textSize="@dimen/small_text_size"
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_marginTop="@dimen/app_margin_small"
+        />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:paddingTop="@dimen/app_margin_left"
+        android:paddingBottom="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:id="@+id/tv_in_time"
+            android:layout_marginTop="@dimen/app_margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-3-10 12:30:40进场"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_text_gray"
+            />
+
+        <TextView
+
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应付款:￥30.00"
+            android:textColor="@color/design_text_gray"
+            android:textSize="@dimen/small_text_size"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_marginTop="@dimen/app_margin_small"
+            />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white"
+        />
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:textSize="@dimen/small_middle_text_size"
+        android:textColor="@color/design_main_orange"
+        android:background="@drawable/round_gray_stroke_large_round"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:layout_marginBottom="@dimen/app_margin_small"
+        android:layout_marginTop="@dimen/app_margin_small"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/app_margin_top"
+        android:paddingRight="@dimen/app_margin_top"
+        android:text="@string/String_pay"
+
+        />
+
+
+</LinearLayout>

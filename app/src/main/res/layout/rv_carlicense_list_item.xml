@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:paddingTop="@dimen/app_margin_left"
+        android:paddingBottom="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:id="@+id/tv_carlicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_middle_text_size"
+        android:textColor="@color/design_text_black"
+        android:text="豫A123456"
+        />
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/app_margin_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:id="@+id/tv_month_card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_month_card_car_title"
+                android:textSize="@dimen/micro_text_size"
+                android:textColor="@color/primary_blue"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/margin_2dp"
+                android:id="@+id/tv_remain_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/micro_text_size"
+                android:textColor="@color/design_text_gray"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:layout_marginLeft="@dimen/app_margin_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white"
+        />
+
+</LinearLayout>

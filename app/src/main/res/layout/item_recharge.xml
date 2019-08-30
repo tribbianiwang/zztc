@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/monthView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:padding="@dimen/app_margin_small"
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:text="@string/this_month"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_middle_text_size" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:paddingTop="@dimen/app_margin_left"
+        android:paddingBottom="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/img"
+                android:scaleType="fitXY"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="@dimen/app_margin_right"
+                android:src="@drawable/icon_check_large" />
+
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/today"
+
+                android:textColor="@color/design_text_black"
+                android:textSize="@dimen/small_middle_text_size" />
+
+            <TextView
+                android:layout_marginTop="@dimen/app_margin_small"
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="11:23"
+                android:textColor="@color/design_text_gray"
+                android:textSize="@dimen/small_middle_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/app_margin_right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-4.00"
+                android:textColor="@color/design_text_black"
+                android:textStyle="bold"
+                android:textSize="@dimen/medium_large_text_size" />
+
+            <TextView
+                android:id="@+id/timeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_time_out"
+                android:layout_marginTop="@dimen/app_margin_small"
+                android:textColor="@color/home_red"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

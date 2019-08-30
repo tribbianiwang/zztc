@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_big_imgs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+>
+
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <com.yascn.smartpark.view.ViewPagerFixed
+        android:id="@+id/vp_imgs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/index_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            style="@style/ToolBarStyle"
+            >
+            <TextView
+                android:id="@+id/tv_page_index"
+
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/white"
+                android:text="1/12"
+                />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+            <TextView
+                android:clickable="true"
+                android:background="@drawable/selector_round_white_stroke"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/bt_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_string"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

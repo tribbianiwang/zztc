@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_white_bg_large_cornor"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:paddingTop="@dimen/app_margin_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_important_info"
+        android:textColor="@color/design_text_black"
+        android:textSize="@dimen/medium_large_text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/micro_text_size"
+        android:textColor="@color/design_text_black"
+        android:layout_marginLeft="@dimen/app_margin_right"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:layout_marginTop="@dimen/app_margin_small"
+        android:text="@string/string_privacy_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/app_margin_top"
+        android:background="@color/gray_white" />
+
+    <TextView
+        android:id="@+id/tv_get_more_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/selector_white_gray"
+        android:paddingBottom="@dimen/app_margin_right"
+        android:paddingTop="@dimen/app_margin_right"
+        android:text="@string/string_get_more"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/small_middle_text_size" />
+
+
+</LinearLayout>

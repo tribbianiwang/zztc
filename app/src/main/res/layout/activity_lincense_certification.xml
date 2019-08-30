@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_white"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/index_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        style="@style/ToolBarStyle"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/car_certification"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_middle_text_size" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_get_photo"
+        android:layout_margin="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_license"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_button_get_pic"
+            android:background="@null"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="@dimen/width_50dp"
+                android:layout_height="@dimen/width_50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_camera_black"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/app_margin_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/click_upload_img"
+                android:textSize="@dimen/small_middle_text_size"
+                android:textColor="@color/design_main_black"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_certification_now"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_12"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_blue_lite"
+        android:layout_marginTop="@dimen/app_margin_small"
+        android:layout_marginLeft="@dimen/app_margin_right"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_sure"
+        android:textSize="@dimen/small_text_size"
+        />
+
+    <TextView
+        android:id="@+id/tv_not_certification"
+        android:layout_marginTop="@dimen/app_margin_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂不认证"
+        android:textColor="@color/design_main_blue"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>

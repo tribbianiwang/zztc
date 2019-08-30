@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:padding="@dimen/app_margin_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="@dimen/app_margin_small"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tv_free_num"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/large_text_size"
+                    android:textColor="@color/primary"
+                    android:text="207"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/free_park_num_without_newline"
+                    android:textSize="@dimen/micro_small_text_size"
+                    android:textColor="@color/primary"
+                    />
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/iv_close"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_close_gray"
+            />
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white"
+        
+        />
+
+    <RelativeLayout
+        android:padding="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_icon_home"
+            android:layout_marginLeft="@dimen/app_margin_top"
+            android:src="@drawable/icon_point_park_gray"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_park_name"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_toRightOf="@id/iv_icon_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_middle_text_size"
+            android:layout_centerVertical="true"
+            />
+        
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/margin_30dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white"
+
+        />
+
+    <RelativeLayout
+        android:padding="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_icon_phone"
+            android:layout_marginLeft="@dimen/app_margin_top"
+            android:src="@drawable/icon_point_phone_gray"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_phone_num"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_toRightOf="@id/iv_icon_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_middle_text_size"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/margin_30dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white"
+
+        />
+
+    <RelativeLayout
+        android:padding="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_icon_id"
+            android:layout_marginLeft="@dimen/app_margin_top"
+            android:src="@drawable/icon_point_license_gray"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_car_license"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_toRightOf="@id/iv_icon_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_middle_text_size"
+            android:layout_centerVertical="true"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_switch_car_license"
+            android:layout_marginRight="@dimen/app_margin_right"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/switch_button"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/small_middle_text_size"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/margin_30dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white"
+        />
+
+    <Button
+        android:id="@+id/bt_ensure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_text_size"
+        android:background="@drawable/selector_blue_deep"
+        />
+
+
+
+</LinearLayout>

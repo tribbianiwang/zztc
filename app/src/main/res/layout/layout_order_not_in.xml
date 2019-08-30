@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/app_margin_left"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:layout_marginTop="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/tv_car_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/design_text_black"
+            android:textSize="@dimen/medium_large_text_size" />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:text="预约中"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_car_license"
+            android:layout_alignBottom="@+id/tv_car_license"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            android:textColor="@color/design_main_blue"
+            android:textSize="@dimen/small_middle_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/app_margin_left"
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_park_name"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/design_text_gray"
+        />
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:id="@+id/tv_remain_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/design_main_orange"
+        android:textSize="@dimen/small_text_size"
+        />
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white"
+        />
+
+    <TextView
+        android:id="@+id/tv_cancel_order"
+        android:textSize="@dimen/small_middle_text_size"
+        android:textColor="@color/design_main_black"
+        android:background="@drawable/round_gray_stroke_large_round"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:layout_marginBottom="@dimen/app_margin_small"
+        android:layout_marginTop="@dimen/app_margin_small"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_order"
+
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,393 @@
+<resources>
+    <string name="app_name">郑在停车</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="loadingProgress">正在加载中....</string>
+    <string name="cameraProgress">正在努力拍摄.请稍等</string>
+
+
+    <!-- 个人中心 -->
+    <string name="car">车辆管理</string>
+    <string name="wallet">我的钱包</string>
+    <string name="record">停车记录</string>
+    <string name="opinion">意见反馈</string>
+    <string name="twitter">推荐他人</string>
+    <string name="on">关于我们</string>
+
+    <string name="information">个人信息</string>
+    <string name="mymessage">我的消息</string>
+    <!-- 个人信息 -->
+    <string name="nickname">昵称</string>
+    <string name="birthday">生日</string>
+    <string name="phonenumber">手机号</string>
+    <string name="notset">未设置</string>
+    <string name="save">保存</string>
+
+    <!-- 登录 -->
+    <string name="getSMS">获取验证码</string>
+    <string name="login">登录</string>
+    <string name="logging_in">登陆中...</string>
+    <string name="get_sms_code_success">获取短信验证码成功</string>
+    <string name="sms_code_gettips">秒</string>
+    <string name="input_phone_code">输入验证码</string>
+    <!-- 个人中心 -->
+
+    <!-- 车辆管理 -->
+    <string name="defaultcarnumber">默认车牌</string>
+    <string name="automatic_pay">自动支付</string>
+    <string name="confirm">确定</string>
+    <string name="add_car_number">添加车牌</string>
+    <string name="carnumber_not_complete">车牌号不完整</string>
+    <string name="threecar">最多管理三辆车</string>
+    <!-- 我的钱包 -->
+    <string name="detail">钱包明细</string>
+    <!-- 主页 -->
+    <string name="recent_park">近期停车</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="gender">性别</string>
+    <string name="checkgpstitle">GPS处于关闭状态</string>
+    <string name="checkgpsmsg">请打开GPS,定位数据更精确</string>
+    <string name="cancle">取消</string>
+    <string name="ensure">确定</string>
+    <string name="evaluate">评论</string>
+    <string name="search_string_empty">搜索关键词为空</string>
+    <string name="validlicense_warning">请添加真实有效的车牌</string>
+    <string name="add_string">添加车牌</string>
+    <string name="default_title">标题</string>
+    <string name="save_string">保存</string>
+    <string name="loading_failed_point_refresh">加载失败,点击刷新</string>
+    <string name="point_see_details">点击查看详情</string>
+    <string name="star_rank">满意请给5星哦</string>
+    <string name="comment_submit_hint">说点什么吧~</string>
+    <string name="submit_string">提交</string>
+    <string name="start_to_experience">开始体验</string>
+    <string name="input_phone_hint">输入手机号</string>
+    <string name="format_error">格式错误</string>
+    <string name="quit_login">退出登录</string>
+    <string name="nodata_error">暂无数据</string>
+    <string name="yascn_adv">预约停车,自动缴费</string>
+    <string name="now_version_title">当前版本:</string>
+    <string name="offical_wechat_title">官方微信:</string>
+    <string name="official_wechat">亚视集团</string>
+    <string name="official_webside_title">官网</string>
+    <string name="official_webside">www.yascn.com</string>
+    <string name="nation_hotline_title">全国热线</string>
+    <string name="nation_hotline">400-999-7277</string>
+
+
+    <string name="to_evaluate_us">去评价</string>
+    <string name="company_name">※河南亚视软件技术有限公司</string>
+    <string name="pay_rules_title">收费规则</string>
+    <string name="free_park_num">  剩余\n车位数</string>
+    <string name="appoint_now">立即预约</string>
+    <string name="point_check_comment">点击查看评论</string>
+    <string name="history_search_title">历史搜索</string>
+    <string name="balance_title">余额（元）</string>
+    <string name="defult_balance">0</string>
+    <string name="money_twenty">20元</string>
+    <string name="money_fifty">50元</string>
+    <string name="money_one_hundred">100元</string>
+    <string name="money_two_hundred">200元</string>
+    <string name="money_five_hundred">500元</string>
+    <string name="money_input_by_yourself">手动输入金额</string>
+    <string name="money_choose_recharge">选择充值方式</string>
+    <string name="wechat_rechage_title">微信支付</string>
+    <string name="alipay_recharge_title">支付宝支付</string>
+    <string name="money_use_of_auto_pay">钱包余额将用于车辆离开停车场时自动支付停车费用</string>
+    <string name="input_destination_title">请输入您的目的地</string>
+    <string name="free_park_num_without_newline">剩余车位数</string>
+    <string name="switch_button">更换</string>
+    <string name="confirm_button">确认</string>
+    <string name="cny_unit">￥</string>
+    <string name="input_nick_name_title">输入昵称（1-6个汉字）</string>
+    <string name="timeout_info_title">超时信息</string>
+    <string name="start_navi_hint">点击地图上的旗帜可直接导航至出入口</string>
+    <string name="start_navi_park_hint">点击地图上的停车场可直接导航至出入口</string>
+    <string name="username_title">登录</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="see_photos">查看照片</string>
+    <string name="need_pay_park_fees">需缴纳停车费</string>
+    <string name="pay_orders">支付订单</string>
+    <string name="had_payed_park_fees">已缴纳停车费</string>
+    <string name="payed_success_leave_now">支付成功！</string>
+    <string name="extra_fees">额外费用</string>
+    <string name="payed_total_park_fees">共缴纳停车费用</string>
+    <string name="immediate_evaluation">立即评价</string>
+    <string name="this_month">本月</string>
+    <string name="today">今天</string>
+    <string name="check_time_out">查看超时</string>
+    <string name="arrive_tomorrow">明日到达</string>
+    <string name="go_to">去往</string>
+    <string name="anterograde">顺行</string>
+    <string name="gps_locate">GPS定位:</string>
+    <string name="not_locate">未定位</string>
+    <string name="appoint">预约</string>
+    <string name="rellay_detail">详情</string>
+    <string name="is_full">已满</string>
+    <string name="no_more_data">没有更多数据了</string>
+    <string name="money_free">免费</string>
+    <string name="advice_open_auto_pay">(建议您到车辆管理开启自动支付)</string>
+    <string name="not_certification">未认证</string>
+    <string name="has_certification">已认证</string>
+    <string name="car_certification">车辆认证</string>
+    <string name="certification_now">立即认证</string>
+    <string name="upload_img_certification">上传照片自动认证</string>
+    <string name="navi_gaode">高德导航</string>
+    <string name="navi_baidu">百度导航</string>
+    <string name="choose_navi_ways">选择导航</string>
+    <string name="inside_navi">内置导航</string>
+    <string name="considerations">注意事项</string>
+    <string name="click_upload_img">点击拍摄行驶证照片</string>
+    <string name="upload_sure">确认上传</string>
+    <string name="driving_permit_img">行驶证照片</string>
+    <string name="pick_from_album">从相册中选择</string>
+    <string name="notify_certification_first">1.请按照实例照片拍摄行驶证</string>
+    <string name="notify_certification_second">2.拍摄过程中请保持行驶证清晰且完整，如遮挡信息、残缺、照片模糊、反光、光线昏暗均会影响验证通过。</string>
+    <string name="iknow">我知道了</string>
+    <string name="uploading">正在上传</string>
+    <string name="please_select_img">请拍摄或选择行驶证照片</string>
+    <string name="licensecertified">车牌已认证</string>
+    <string name="search_result_empty">没有找到结果</string>
+    <string name="search_error">获取结果失败</string>
+    <string name="nopark_around">附近无亚视认证停车场</string>
+    <string name="string_history_title">历史记录</string>
+    <string name="string_qr_code">扫一扫</string>
+    <string name="string_license_fee">车牌付费</string>
+    <string name="string_car_manage">车辆管理</string>
+    <string name="string_my_order">我的订单</string>
+    <string name="string_recommand_neighbor_parkinglot">附近推荐</string>
+    <string name="string_look_now">立即查看</string>
+    <string name="string_qr_code_notice">放入框内进行扫描</string>
+    <string name="string_point_light">点击点亮</string>
+    <string name="string_click_close">点击关闭</string>
+    <string name="string_car_license_fee">车牌付费</string>
+    <string name="string_query_fee">查询停车费</string>
+    <string name="string_license_notfull">车牌号不完整</string>
+    <string name="string_cb_new_energy">8位新能源车牌</string>
+    <string name="string_pleash_input_carlicense">请输入车牌号</string>
+    <string name="String_pay">付款</string>
+    <string name="string_paid_notout_nottimeout">已支付</string>
+    <string name="string_already_pay_fee_title">已付款:</string>
+    <string name="string_park_during_title">停车：</string>
+    <string name="string_in_park">进场</string>
+    <string name="string_status_notin">预约中</string>
+    <string name="string_should_pay_title">应付款:</string>
+    <string name="string_unpayin_status">未支付</string>
+    <string name="string_paid_notout_timeout">已超时</string>
+    <string name="string_time_out">超时:</string>
+    <string name="string_park_during_title_short">停车</string>
+    <string name="string_title_money">￥</string>
+    <string name="string_car_search_history">历史搜索</string>
+    <string name="string_cacel">取消</string>
+    <string name="string_nopwd_pay">免密支付</string>
+    <string name="string_defult_car">默认车辆</string>
+    <string name="string_car_certification">车牌认证</string>
+    <string name="string_car_delete">解除绑定</string>
+    <string name="setdefult_carnumber">设为默认</string>
+    <string name="string_parkpay_fee">亚视停车交费</string>
+    <string name="string_see_picture">查看照片</string>
+    <string name="string_start_time">入场时间</string>
+    <string name="string_coupons_title">优惠券</string>
+    <string name="string_park_during_title_long">停车时长</string>
+    <string name="string_total_money_title">总费用</string>
+    <string name="string_paid_money">已付款</string>
+    <string name="string_should_pay_title_no_point">应付款</string>
+    <string name="string_pay_now">请支付</string>
+    <string name="string_recommand_app">推荐他人</string>
+    <string name="string_recommand_weixin_friend">推荐到微信</string>
+    <string name="string_recommand_weixin_circle">推荐到朋友圈</string>
+    <string name="string_recommand_qq">推荐到QQ</string>
+    <string name="string_recommand_weibo">推荐到微博</string>
+    <string name="money_one_thousand">1000元</string>
+    <string name="string_componing_money">元</string>
+    <string name="string_pay_detail">钱包明细</string>
+    <string name="string_imgs_number_limit">最多可上传3张图片</string>
+    <string name="string_opinion">意见反馈</string>
+    <string name="string_fee_detail">收费标准</string>
+    <string name="string_see_comment">查看评论</string>
+    <string name="string_appoint_title">确认预约信息</string>
+    <string name="string_free_parknums_title">剩余车位</string>
+    <string name="string_reserve_time_title">预留时间</string>
+    <string name="string_phone_title">手机号</string>
+    <string name="string_carlicense_title">车牌号</string>
+    <string name="string_bind_carnumber_warning">暂无车牌,点击绑定</string>
+    <string name="string_login">登录</string>
+    <string name="string_phone_hint">请输入手机号</string>
+    <string name="string_next">下一步</string>
+    <string name="string_input_sms">输入验证码</string>
+    <string name="string_carlicense_null">还未绑定车牌</string>
+    <string name="string_validation_old_phone">验证旧手机</string>
+    <string name="string_input_new_phone">请输入新的电话号码</string>
+    <string name="string_finish">完成</string>
+    <string name="string_car_limit_title">今日限行</string>
+    <string name="no_limit_car">不限</string>
+    <string name="now_phone_number">您当前手机号为:</string>
+    <string name="string_change_phone_failed">修改手机号失败，换个手机号试试</string>
+    <string name="string_change_phone_success">修改手机号成功</string>
+    <string name="string_no_payinfo">暂无该车牌信息或车辆已出场</string>
+    <string name="string_time_bottom">前可用</string>
+    <string name="headicon">头像</string>
+    <string name="string_rmb_unit">元</string>
+    <string name="comment_is_empty">评论内容不能为空</string>
+    <string name="commit_success">提交成功</string>
+    <string name="string_wallet_pay">余额支付</string>
+    <string name="string_server_error">网络错误</string>
+    <string name="string_qr_code_outoftime">二维码失效请重新扫描</string>
+    <string name="string_use_guide">使用说明</string>
+    <string name="string_bind_title">车辆绑定</string>
+    <string name="string_ahead_pay">提前支付</string>
+    <string name="string_appint_pay">预约停车</string>
+    <string name="string_carlicense_pay">车牌付费</string>
+    <string name="string_scan_pay">扫一扫付费</string>
+    <string name="string_bind_car_info_first">
+        在"车辆管理"中进行车辆信息的绑定(登录状态下)。绑定车辆后您将具备订单实时同步功能，您所
+        绑定的车辆进出亚视停车场将会收到如下图的通知信息。
+    </string>
+
+    <string name="string_bind_car_info_second">
+       绑定车辆并开通免密支付，如果您的账户余额充足，车辆离场时
+        将会自动扣除相应停车费用，无需您进行额外的操作。
+    </string>
+
+    <string name="string_bind_car_info_third">
+    未认证的车辆，由于无法认定您输入的车牌号码归您所属,所以可多个用户进行绑定
+        ，该停车场进出停车场后，所有用户都会受到进出推送，并刷新账单信息。
+        (如您的车辆在您不知情的情况下进入停车场，请先确认您是否将车牌号码输入错误
+        ，或拨打400-999-7277询问客服)。已认证车辆，您是该车辆的所属者，其他用户无法绑定该车辆。
+    </string>
+    <string name="string_nopwd_pay_title_with_number">①免密支付</string>
+    <string name="string_car_certification_title_with_number">②车辆认证</string>
+    <string name="string_ahead_pay_title_first">
+        当您准备离开时，可以通过"我的订单"查看您车辆的停车信息，并进行停车费的缴纳。
+        缴纳成功后，您可在20分钟内离开停车场将不再进行额外收费。
+    </string>
+
+    <string name="string_ahead_pay_title_second">
+       当您缴纳完停车费用，超过20分钟免费时间后，将继续收取超时停车费用，依然可以通过订单信息进行查看和缴纳。
+    </string>
+    <string name="string_appoint_pay_title">您可以进行车位的预约，预约后停车场将在规定时间内为您保留车位，具体时间以订单提示为准。超过规定预留时间，该订单将自动取消。同时您可以手动取消该预约订单，每个用户每月有三次手动取消的机会</string>
+    <string name="string_carlicense_pay_title">无需绑定，输入车牌号码，查询车辆停车费订单，并进行缴费。方便为您的好友等非常用车辆进行手机缴费</string>
+    <string name="string_scan_pay_title">若停车场岗亭支持大屏幕扫码支付，可以通过扫码进行停车费用的缴纳</string>
+    <string name="confirm_pay_another">确认付款</string>
+    <string name="string_money_unit">元</string>
+    <string name="string_balance">余额支付</string>
+    <string name="string_balance_title">余额</string>
+    <string name="string_balance_not_enough">余额不足请充值</string>
+    <string name="string_pay_success">支付完成</string>
+    <string name="string_pay_success_detail">当前订单支付完成</string>
+    <string name="string_order_detail">订单详情</string>
+    <string name="string_pay_fee_title">付款金额</string>
+    <string name="string_in_time_title">进场时间</string>
+    <string name="string_out_time_time">出场时间</string>
+    <string name="string_park_duringtime_title">停车时长</string>
+    <string name="string_status_title">当前状态</string>
+    <string name="string_pay_time">支付时间</string>
+    <string name="string_pay_type">支付方式</string>
+    <string name="string_order_number_title">交易单号</string>
+    <string name="string_comment_status">评价状态</string>
+    <string name="string_skip">跳过</string>
+    <string name="error_qr_code">请扫描正确的二维码</string>
+    <string name="string_pick_coupoing">优惠券</string>
+    <string name="string_order_info">订单信息</string>
+    <string name="string_title_park_during_time">已停车</string>
+    <string name="string_pay_money_title">支付金额</string>
+    <string name="string_couponing_title">优惠券</string>
+    <string name="string_pick_pay_type">请选择支付方式</string>
+
+    <string name="status_couponing_type_money">1</string>
+    <string name="status_couponing_type_time">0</string>
+
+    <string name="string_couponing_type_money">支付金额抵用券</string>
+    <string name="string_couponing_type_time">停车时长抵用券</string>
+    <string name="string_pay_free_failed">订单支付失败，请重试</string>
+    <string name="string_couponing_pay_title">优惠券抵扣</string>
+    <string name="string_my_message">我的消息</string>
+    <string name="string_info_detail">消息详情</string>
+    <string name="string_comment_sucess">评论成功</string>
+    <string name="string_pay_error">支付失败</string>
+    <string name="string_weather">天气</string>
+    <string name="string_city_not_support">抱歉，当前城市或地区未开通服务!</string>
+    <string name="string_city_zhengzhou">郑州市</string>
+    <string name="string_locating">定位中.....</string>
+    <string name="arrow_up">↑</string>
+    <string name="arrow_down">↓</string>
+    <string name="degree">°</string>
+    <string name="percent">%</string>
+    <string name="wind">风</string>
+    <string name="level">级</string>
+    <string name="string_defult_temp">--°C</string>
+    <string name="string_validation_new_phone">验证新手机</string>
+    <string name="string_qr_code_not_work_in_this_park_now">App扫码支付在该停车场暂不可用，请使用其他支付方式</string>
+    <string name="string_important_info">重要通知</string>
+    <string name="string_privacy_title">郑在停车重视用户的隐私问题并严格遵守相关法律法规要求，如使用郑在停车APP请知悉《郑在停车隐私政策》 </string>
+    <string name="string_get_more">了解更多</string>
+    <string name="string_privacy_policy">隐私政策</string>
+    <string name="string_update_date">更新日期:2018年9月11日</string>
+    <string name="string_disagree">不同意</string>
+    <string name="string_agree">同意</string>
+    <string name="string_sad_emoji"><![CDATA[>_<]]></string>
+    <string name="string_privacy_refuse">对于您的拒绝我们感到十分抱歉，遵循隐私政策是使用郑在停车的基础，郑在停车希望给您提供更好地服务</string>
+    <string name="string_quit">退出</string>
+    <string name="string_reread">重新阅读</string>
+    <string name="string_click_to_quick">点击过快，请稍等~</string>
+    <string name="string_install_apk_title">请求安装应用权限</string>
+    <string name="string_install_apk_content">需要您允许权限之后才可以安装最新版本</string>
+    <string name="string_wallet">钱包</string>
+    <string name="string_integral_title">积分</string>
+    <string name="string_month_card">月卡购买</string>
+    <string name="string_number_unit">个</string>
+    <string name="string_click_to_see">点击查看</string>
+    <string name="string_no_recommand_park">附近暂无认证停车场</string>
+    <string name="string_park_nums_title">剩余车位:</string>
+    <string name="string_park_distance">距您:</string>
+    <string name="string_km">km</string>
+    <string name="get_recommand_error">获取停车场信息失败</string>
+    <string name="string_month_card_title">月卡</string>
+    <string name="string_season_card_title">季卡</string>
+    <string name="string_year_card_title">年卡</string>
+    <string name="string_option_card_title">自选</string>
+    <string name="string_park_search_hint">停车场名称</string>
+    <string name="string_month_card_thirty">月卡30天</string>
+    <string name="string_onhundred">100元</string>
+    <string name="string_season_card_ninety">季卡90天</string>
+    <string name="string_year_card_365">年卡365天</string>
+    <string name="string_diy_card">自定义天数</string>
+    <string name="string_x_yuan">X元</string>
+    <string name="string_choose_recharge">充值方式</string>
+    <string name="string_yuan">元</string>
+    <string name="string_buy_now">立即购买</string>
+    <string name="string_input_days">请输入天数</string>
+    <string name="string_confirm">确认</string>
+    <string name="string_choose_card_type">选择月卡类型</string>
+    <string name="string_effect_time">生效时间</string>
+    <string name="string_carlicense_title_long">车牌号码</string>
+    <string name="string_cardtype_title">月卡类型</string>
+    <string name="string_wechat_title">微信支付</string>
+    <string name="string_alipay_title">支付宝支付</string>
+    <string name="string_only_onecar">目前只绑定了一个车牌号码</string>
+    <string name="string_choose_carlicense">选择车牌</string>
+    <string name="string_carlicense_new">添加新车牌</string>
+    <string name="string_day">天</string>
+    <string name="loading_carlicense">获取车牌中...</string>
+    <string name="string_no_bind_carnumber">未绑定车牌</string>
+    <string name="monthcard_type_empty">该停车场暂不支持月卡购买</string>
+    <string name="monthcard_type_loading">月卡类型未加载完成</string>
+    <string name="string_date_pick_earlyer_warning">请选择今天或今天以后的日期</string>
+    <string name="string_pay_another">支付</string>
+    <string name="string_pick_card_type">请选择月卡类型</string>
+    <string name="string_choose_carlicense_warning">未选择车牌</string>
+    <string name="string_month_card_info">月卡信息</string>
+    <string name="string_refill">续费</string>
+    <string name="string_remain_days">剩余</string>
+    <string name="string_unit_ge">个</string>
+    <string name="string_refill_unable">该车牌不支持购买或续费月卡</string>
+    <string name="string_month_card_car_title">月卡车辆</string>
+    <string name="string_add_other_carlicense">添加其他车牌</string>
+    <string name="string_navi">导航</string>
+    <string name="string_appoint">预约</string>
+    <string name="string_car_limit">限行尾号</string>
+    <string name="bind_car_success">绑定成功</string>
+</resources>

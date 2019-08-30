@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_white"
+    tools:context="com.yascn.smartpark.activity.CardCertificationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/index_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        style="@style/ToolBarStyle"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/car_certification"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_middle_text_size" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/app_margin_right"
+                >
+                <TextView
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u3000车牌号:"
+                    android:textSize="@dimen/small_middle_text_size"
+                    android:textColor="@color/design_main_black"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_car_license"
+                    android:textSize="@dimen/small_middle_text_size"
+                    android:text="豫A8888"
+                    android:layout_weight="9"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/app_margin_right"
+                >
+                <TextView
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车主姓名:"
+                    android:textSize="@dimen/small_middle_text_size"
+                    android:textColor="@color/design_main_black"
+                    />
+
+                <EditText
+                    android:id="@+id/et_owner_name"
+                    android:textSize="@dimen/small_middle_text_size"
+                    android:text=""
+                    android:layout_weight="9"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_white"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/app_margin_right"
+                >
+                <TextView
+                    android:id="@+id/tv_vin"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车架号码*:"
+                    android:textSize="@dimen/small_middle_text_size"
+                    android:textColor="@color/design_main_black"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/et_vin"
+                    android:textSize="@dimen/small_middle_text_size"
+                    android:text=""
+                    android:layout_weight="9"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/app_margin_right"
+                >
+                <TextView
+                    android:id="@+id/tv_engine_num"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发动机号*:"
+                    android:textSize="@dimen/small_middle_text_size"
+                    android:textColor="@color/design_main_black"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/et_engine_num"
+                    android:textSize="@dimen/small_middle_text_size"
+                    android:text=""
+                    android:layout_weight="9"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/app_margin_right"
+                >
+                <TextView
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="品牌型号:"
+                    android:textSize="@dimen/small_middle_text_size"
+                    android:textColor="@color/design_main_black"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/et_model"
+                    android:textSize="@dimen/small_middle_text_size"
+                    android:text=""
+                    android:layout_weight="9"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_white"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_certification_now"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/app_margin_left"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_blue_deep"
+                android:layout_marginTop="@dimen/margin_40dp"
+                android:layout_marginLeft="@dimen/margin_40dp"
+                android:layout_marginRight="@dimen/margin_50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/certification_now"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_upload_img_certification"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/app_margin_left"
+                android:textColor="@color/design_main_blue"
+                android:background="@drawable/round_gray_stroke"
+                android:layout_marginTop="@dimen/app_margin_right"
+                android:layout_marginLeft="@dimen/margin_40dp"
+                android:layout_marginRight="@dimen/margin_50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_img_certification"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:id="@+id/ll_root"
+    android:background="@drawable/stroke_gray_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_fee_title"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/design_text_gray"
+        android:gravity="center"
+        android:padding="@dimen/margin_7dp"
+
+
+
+        />
+    <View
+
+        android:layout_width="1dp"
+        android:background="@color/gray_white"
+        android:layout_height="match_parent"></View>
+
+    <TextView
+
+        android:id="@+id/tv_fee_money"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/design_text_gray"
+        android:gravity="center"
+        android:padding="@dimen/margin_7dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_introduction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_white"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/index_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        style="@style/ToolBarStyle"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/string_appoint_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_middle_text_size" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/app_margin_small"
+        android:paddingTop="@dimen/app_margin_left"
+        android:paddingBottom="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <View
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_width="@dimen/app_margin_small"
+            android:layout_height="match_parent"
+            android:background="@color/primary"
+            ></View>
+
+        <TextView
+            android:id="@+id/tv_park_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CBD2号停车场"
+            android:textSize="@dimen/small_middle_text_size"
+            android:textColor="@color/design_text_black"
+            android:layout_marginLeft="@dimen/app_margin_small"
+
+            />
+
+
+    </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_white"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_marginRight="@dimen/app_margin_left"
+            ></View>
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:padding="@dimen/app_margin_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_free_parknums_title"
+                android:textSize="@dimen/small_middle_text_size"
+                android:textColor="@color/design_text_gray"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_free_park_nums"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/app_margin_left"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small_middle_text_size"
+                android:textColor="@color/design_text_black"
+                />
+        </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white"
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_marginRight="@dimen/app_margin_left"
+        ></View>
+    <RelativeLayout
+        android:background="@color/white"
+        android:padding="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_reserve_time_title"
+            android:textSize="@dimen/small_middle_text_size"
+            android:textColor="@color/design_text_gray"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_reserve_time"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/app_margin_left"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_middle_text_size"
+            android:textColor="@color/design_text_black"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white"
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_marginRight="@dimen/app_margin_left"
+        ></View>
+    <RelativeLayout
+        android:background="@color/white"
+        android:padding="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_phone_title"
+            android:textSize="@dimen/small_middle_text_size"
+            android:textColor="@color/design_text_gray"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/app_margin_left"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_middle_text_size"
+            android:textColor="@color/design_text_black"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white"
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_marginRight="@dimen/app_margin_left"
+        ></View>
+    <RelativeLayout
+        android:background="@color/white"
+        android:padding="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_carlicense_title"
+            android:textSize="@dimen/small_middle_text_size"
+            android:textColor="@color/design_text_gray"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_car_license"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/app_margin_left"
+            android:gravity="center"
+            >
+        <TextView
+            android:id="@+id/tv_car_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_middle_text_size"
+            android:textColor="@color/design_text_black"
+            />
+
+         <ImageView
+             android:id="@+id/iv_arrow"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:src="@drawable/icon_arrow_down_gray"
+
+             />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white"
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_marginRight="@dimen/app_margin_left"
+        ></View>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <Button
+            android:layout_marginLeft="@dimen/app_margin_right"
+            android:layout_marginRight="@dimen/app_margin_right"
+            android:id="@+id/bt_appoint_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_70dp"
+            android:background="@drawable/selector_blue_deep"
+            android:text="@string/appoint_now"
+            android:textColor="@color/gray_white"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+
+</LinearLayout>

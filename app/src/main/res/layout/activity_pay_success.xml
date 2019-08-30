@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_introduction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/index_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        style="@style/ToolBarStyle"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/string_pay_success"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_middle_text_size" />
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_margin_left"
+        android:background="@color/gray_white"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal|top"
+        android:gravity="center_horizontal|top"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:src="@drawable/icon_pay_success"
+            android:scaleType="fitCenter"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_pay_success"
+            android:textSize="@dimen/small_middle_text_size"
+            android:textColor="@color/design_text_black"
+            android:layout_marginTop="@dimen/app_margin_small"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_pay_success_detail"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_text_gray"
+            android:layout_marginTop="@dimen/app_margin_small"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:textColor="@color/design_main_blue"
+            android:background="@drawable/selector_round_blue_stroke"
+            android:layout_marginTop="@dimen/app_margin_top"
+            android:layout_marginLeft="@dimen/margin_70dp"
+            android:layout_marginRight="@dimen/margin_70dp"
+            android:gravity="center"
+            android:padding="@dimen/app_margin_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/string_finish"
+            android:textSize="@dimen/small_middle_text_size"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

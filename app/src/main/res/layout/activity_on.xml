@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:wl="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"></include>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/app_margin_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="@dimen/largest_text_size"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.yascn.smartpark.view.RoundImageView
+                android:id="@+id/riv_head"
+                wl:borderRadius="2dp"
+                wl:type="round"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_logo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:text="@string/app_name"
+                android:textColor="@color/design_text_black"
+                android:textSize="@dimen/small_middle_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_margin_small"
+                android:text="@string/yascn_adv"
+                android:textColor="@color/design_text_gray"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/app_margin_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/app_margin_left"
+
+            >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/app_margin_small"
+                    android:text="@string/now_version_title"
+                    android:textSize="@dimen/small_text_size"
+                    android:textColor="@color/design_main_black"
+
+                    />
+
+                <TextView
+                    android:textColor="@color/design_main_black"
+                    android:id="@+id/tv_version_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_30dp"
+                    android:text="2.0"
+                    android:textSize="@dimen/small_text_size" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/app_margin_left">
+
+                <TextView
+                    android:textColor="@color/design_main_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                     android:layout_marginLeft="@dimen/app_margin_small"
+                    android:text="@string/offical_wechat_title"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:textColor="@color/design_main_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_30dp"
+                    android:text="@string/official_wechat"
+                    android:textSize="@dimen/small_text_size" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/app_margin_left">
+
+                <TextView
+                    android:textColor="@color/design_main_black"
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                     android:layout_marginLeft="@dimen/app_margin_small"
+                    android:text="@string/official_webside_title"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/textView"
+                    android:layout_marginRight="@dimen/margin_30dp"
+                    android:textColor="@color/design_main_blue"
+                    android:text="@string/official_webside"
+                    android:textSize="@dimen/small_text_size" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/app_margin_left">
+
+                <TextView
+                    android:textColor="@color/design_main_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                     android:layout_marginLeft="@dimen/app_margin_small"
+                    android:text="@string/nation_hotline_title"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_30dp"
+                    android:text="@string/nation_hotline"
+                    android:textSize="@dimen/small_text_size"
+                    android:textColor="@color/design_main_blue"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_to_app_market"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/app_margin_left"
+                android:background="@drawable/selector_white_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                     android:layout_marginLeft="@dimen/app_margin_small"
+                    android:text="@string/to_evaluate_us"
+                    android:textColor="@color/design_text_black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/right_point_size"
+                    android:layout_height="@dimen/right_point_size"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="fitXY"
+
+                    android:layout_marginRight="@dimen/app_margin_right"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_arrow_gray_right" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|end"
+        android:gravity="bottom|center_horizontal"
+        >
+        <TextView
+            android:textColor="@color/design_main_black"
+            android:layout_marginBottom="@dimen/app_margin_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company_name"
+
+            android:textSize="@dimen/small_text_size"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

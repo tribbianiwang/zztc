@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/app_margin_left"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:layout_marginTop="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/tv_car_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+            android:textColor="@color/design_text_black"
+            android:textSize="@dimen/medium_large_text_size" />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_car_license"
+            android:layout_alignBottom="@+id/tv_car_license"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="已支付"
+            android:textColor="@color/design_main_blue"
+            android:textSize="@dimen/small_middle_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:paddingTop="@dimen/app_margin_left"
+        android:paddingBottom="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_park_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/design_text_gray"
+        />
+
+        <TextView
+            android:id="@+id/tv_park_during_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_park_name"
+            android:layout_alignBottom="@+id/tv_park_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            android:textColor="@color/design_text_gray"
+            android:textSize="@dimen/small_text_size" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_white"
+        />
+
+
+    <RelativeLayout
+
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:paddingTop="@dimen/app_margin_left"
+        android:paddingBottom="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_in_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_text_gray"
+            />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_in_time"
+            android:layout_alignBottom="@+id/tv_in_time"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            android:textColor="@color/design_text_gray"
+            android:textSize="@dimen/small_text_size" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

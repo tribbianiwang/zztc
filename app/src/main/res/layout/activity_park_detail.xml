@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_park_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/icon_park_vertical"
+  >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/index_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        style="@style/ToolBarStyle"
+        />
+
+
+    <ScrollView
+        android:layout_below="@id/index_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:id="@+id/tv_park_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text_size"
+                android:layout_marginLeft="@dimen/app_margin_top"
+                />
+
+            <TextView
+                android:layout_below="@id/tv_park_name"
+                android:id="@+id/tv_address"
+                android:layout_marginTop="@dimen/app_margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginLeft="@dimen/app_margin_top"
+                />
+
+            <RatingBar
+                android:id="@+id/rb"
+                android:layout_below="@id/tv_address"
+                android:layout_marginLeft="@dimen/app_margin_top"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_margin_left"
+                android:max="5"
+                android:progress="5"
+                android:progressTint="@color/event6"
+                android:theme="@style/RatingBar_CustomColor"
+                />
+
+
+            <RelativeLayout
+                android:visibility="invisible"
+                android:id="@+id/rl_time"
+                android:layout_below="@id/rb"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginLeft="@dimen/app_margin_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_icon_time"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_time_white"
+                    />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/app_margin_left"
+                    android:layout_toRightOf="@id/iv_icon_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00-21:00"
+                    android:textSize="@dimen/micro_text_size"
+                    android:textColor="@color/white"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_below="@id/rl_time"
+                android:id="@+id/fl_freenum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin_50dp"
+                    android:layout_marginLeft="@dimen/app_margin_right"
+                    android:layout_marginRight="@dimen/app_margin_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_white_bg">
+
+                    <LinearLayout
+                        android:gravity="left"
+                        android:paddingTop="60dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_gray_bg"
+                        >
+                        <ImageView
+                            android:layout_marginLeft="@dimen/app_margin_top"
+                            android:layout_marginTop="@dimen/app_margin_left"
+                            android:layout_marginRight="@dimen/app_margin_left"
+                            android:layout_marginBottom="@dimen/app_margin_left"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/icon_wifi_gray"
+                            />
+
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/icon_lock_gray"
+                            android:layout_margin="@dimen/app_margin_left"
+                            />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/icon_time_gray"
+                            android:layout_margin="@dimen/app_margin_left"
+                            />
+
+                        <ImageView
+                            android:layout_margin="@dimen/app_margin_left"
+
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/icon_wheelchair"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/icon_lightning"
+                            android:layout_margin="@dimen/app_margin_left"
+                            />
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/icon_water_drop"
+                            android:layout_margin="@dimen/app_margin_left"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pay_rules_title"
+                            android:textSize="@dimen/small_middle_text_size"
+                            android:layout_marginLeft="@dimen/app_margin_top"
+                            android:layout_marginTop="@dimen/app_margin_top"
+                            />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_marginBottom="@dimen/app_margin_top"
+                            android:id="@+id/rv_pay_rules"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_freenum_root"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="@dimen/app_margin_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_blue_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/app_margin_left"
+                    >
+                    <TextView
+                        android:id="@+id/tv_free_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="50dp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_marginLeft="@dimen/app_margin_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/free_park_num"
+                        android:textColor="@color/gray_white"
+                        android:textSize="@dimen/large_text_size"
+                        />
+
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <Button
+
+                android:id="@+id/bt_appoint_now"
+                android:layout_marginTop="@dimen/app_margin_left"
+                android:layout_marginLeft="@dimen/app_margin_right"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/appoint_now"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_blue_bg"
+                />
+            <Button
+                android:id="@+id/bt_comment"
+                android:layout_marginTop="@dimen/app_margin_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/point_check_comment"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_blue_deep"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

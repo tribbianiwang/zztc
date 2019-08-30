@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray_white"
+    >
+
+    <TextView
+        android:padding="@dimen/app_margin_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_navi_ways"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/gray_deep"
+        />
+
+    <RelativeLayout
+        android:clickable="true"
+        android:padding="@dimen/app_margin_left"
+        android:id="@+id/rl_gaode_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_white_gray"
+        >
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:id="@+id/iv_gaode_navi"
+            android:layout_alignParentLeft="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_gaode_navi"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_gaode_navi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/navi_gaode"
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/small_middle_text_size"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:clickable="true"
+        android:layout_marginTop="1dp"
+        android:padding="@dimen/app_margin_left"
+        android:id="@+id/rl_baidu_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_white_gray"
+        >
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:id="@+id/iv_baidu"
+            android:layout_alignParentLeft="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_baidu_navi"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_baidu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/navi_baidu"
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/small_middle_text_size"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:clickable="true"
+        android:layout_marginTop="1dp"
+        android:padding="@dimen/app_margin_left"
+        android:id="@+id/rl_inside_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_white_gray"
+        >
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:id="@+id/iv_inside"
+            android:layout_alignParentLeft="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_navi_local"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_inside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inside_navi"
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/small_middle_text_size"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:clickable="true"
+        android:gravity="center"
+        android:textSize="@dimen/small_middle_text_size"
+        android:layout_marginTop="@dimen/app_margin_top"
+        android:padding="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancle"
+        android:textColor="@color/gray_deep"
+        android:background="@drawable/selector_white_gray"
+        />
+
+
+
+</LinearLayout>

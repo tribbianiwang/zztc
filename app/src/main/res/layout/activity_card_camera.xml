@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_root"
+    >
+    <com.yascn.smartpark.view.CameraSurfaceView
+        android:id="@+id/cameraSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.yascn.smartpark.view.CameraTopRectView
+        android:id="@+id/rectOnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_img_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_alignParentTop="true"
+            android:id="@+id/index_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:minHeight="?attr/actionBarSize"
+            style="@style/ToolBarStyle"
+            >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/driving_permit_img"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_middle_text_size" />
+        </android.support.v7.widget.Toolbar>
+
+
+        <ImageView
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20px"
+            android:id="@+id/iv_take_pic"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/selector_iv_take_picture"
+         />
+    </RelativeLayout>
+
+
+</FrameLayout>

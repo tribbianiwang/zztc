@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_car_license"
+        android:layout_marginLeft="@dimen/app_margin_small"
+        android:layout_marginRight="@dimen/app_margin_small"
+        android:background="@drawable/rounded_gray_bg"
+        android:textSize="@dimen/micro_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="豫A88888"
+        android:padding="@dimen/app_margin_small"
+        android:textColor="@color/design_text_black"
+        />
+
+</LinearLayout>

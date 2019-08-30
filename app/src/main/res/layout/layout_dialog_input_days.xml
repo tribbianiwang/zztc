@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="@dimen/app_margin_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_input_days"
+        android:textSize="@dimen/small_middle_text_size"
+        android:textColor="@color/design_text_black"
+        />
+
+    <EditText
+        android:layout_marginTop="@dimen/app_margin_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="4"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/design_text_black"
+        android:id="@+id/et_days"
+        android:inputType="number"
+        />
+
+
+    <View
+        android:layout_marginTop="@dimen/app_margin_right"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        >
+        <TextView
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/tv_cancel"
+            android:paddingBottom="@dimen/app_margin_right"
+            android:paddingTop="@dimen/app_margin_right"
+            android:gravity="center"
+            android:textColor="@color/design_text_alpha_gray"
+            android:textSize="@dimen/small_middle_text_size"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/string_cacel"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_white"
+            />
+        <TextView
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/tv_sure"
+            android:paddingBottom="@dimen/app_margin_right"
+            android:paddingTop="@dimen/app_margin_right"
+            android:gravity="center"
+            android:textColor="@color/primary_blue"
+            android:textSize="@dimen/small_middle_text_size"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/string_confirm"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

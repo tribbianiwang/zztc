@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ipv="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/thirdLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/index_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/string_car_license_fee"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_middle_text_size" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@id/index_toolbar"
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+
+    <TextView
+
+        android:id="@+id/tv_car_license_title"
+        android:layout_marginTop="@dimen/app_margin_top"
+        android:layout_marginBottom="@dimen/app_margin_left"
+        android:padding="@dimen/app_margin_left"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_pleash_input_carlicense"
+        android:textColor="@color/design_text_gray"
+        android:textSize="@dimen/small_middle_text_size"
+        />
+
+
+    <com.yascn.smartpark.view.InputView
+        android:layout_below="@id/tv_car_license_title"
+        android:text="豫"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/input_view"
+        android:layout_margin="@dimen/app_margin_left"
+        android:layout_width="match_parent"
+        android:cursorVisible="true"
+        ipv:bg_color="@color/white"
+        android:background="@color/white"
+        android:textCursorDrawable="@null"
+        android:layout_height="60dp" />
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_below="@id/input_view"
+        android:layout_marginRight="@dimen/app_margin_right"
+        android:layout_gravity="right"
+        android:id="@+id/acb_newenergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_cb_new_energy"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/small_text_size"
+        />
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_car_search_history"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/design_text_gray"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/app_margin_left"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_marginBottom="@dimen/app_margin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left|center_vertical"
+            >
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/rv_search_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_delete_gray"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <Button
+
+        android:layout_below="@id/ll_head"
+        android:id="@+id/bt_query_fee"
+        android:layout_marginLeft="@dimen/app_margin_top"
+        android:layout_marginRight="@dimen/app_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_margin_top"
+        android:background="@drawable/bg_add"
+        android:text="@string/string_query_fee"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_middle_text_size" />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/app_margin_left"
+        >
+        <android.inputmethodservice.KeyboardView
+            android:background="@color/gray_white"
+            android:id="@+id/keyboard_view"
+            android:keyPreviewLayout="@layout/key_preview_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:paddingTop="5dp"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@drawable/cornor_selector_white_gray"
+            android:keyTextColor="#5E5E5E"
+            android:shadowColor="#ffffff"
+            android:shadowRadius="0.0"
+            android:keyTextSize="18sp"
+            android:labelTextSize="18sp"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

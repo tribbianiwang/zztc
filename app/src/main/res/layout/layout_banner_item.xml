@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/icon_plach_hoder_landscape"
+        android:id="@+id/iv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_car_license_limit"
+        android:layout_marginLeft="45dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_blue_bg"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_day_of_today"
+            android:visibility="visible"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="@dimen/app_margin_larger"
+            android:paddingRight="@dimen/app_margin_larger"
+            android:background="@drawable/rounded_blue_bg_top_left_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin_3dp"
+            android:background="@drawable/rounded_white_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+    <com.yascn.smartpark.view.StrokeTextView
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:id="@+id/tv_limit_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1/6"
+        android:textSize="50sp"
+        android:textColor="@color/primary_blue"
+        />
+
+            <TextView
+                android:id="@+id/tv_car_limit_bottom"
+                android:layout_marginBottom="@dimen/app_margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/micro_text_size"
+                android:textColor="@color/primary_blue"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
